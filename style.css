@@ -79,10 +79,10 @@ main {
 .page-title {
   margin: 0 0 12px;
   color: #111827;
-  font-size: clamp(42px, 8vw, 72px);
-  line-height: 1.05;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.15;
   font-weight: 400;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 }
 
 .subtitle {
