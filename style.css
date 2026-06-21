@@ -130,20 +130,31 @@ h2 {
 }
 
 .project-list {
-  display: grid;
-  gap: 22px;
+  display: block;
+  margin: 0;
 }
 
 .project {
-  padding: 22px;
-  border-left: 4px solid var(--accent);
-  background: #fafbfd;
+  position: relative;
+  margin-bottom: 18px;
+  padding-left: 24px;
+  border-left: none;
+  background: transparent;
+}
+
+.project::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--text);
 }
 
 .project h3 {
-  margin: 0 0 8px;
-  font-size: 22px;
-  line-height: 1.35;
+  margin: 0 0 4px;
+  font-size: 19px;
+  line-height: 1.5;
+  font-weight: 700;
 }
 
 .project p,
